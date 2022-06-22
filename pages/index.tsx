@@ -17,7 +17,7 @@ const Home: NextPage = () => {
   const [isError, setIsError] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
 
-  const handleOnChange = (e: any) => {
+  const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     setSearchValue(e.target.value);
   };
 
